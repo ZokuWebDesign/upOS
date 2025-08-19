@@ -1,7 +1,7 @@
 "use client";
-import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { Button } from "@/components/ui/button";
 
 const NotFound = () => {
   const pathName = usePathname();
