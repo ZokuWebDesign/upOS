@@ -2,53 +2,48 @@
 
 const FeatureImageTwo = () => {
   return (
-    <section id="inicio" className="bg-primary relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-14">
-        <div className="flex flex-col items-center pt-[90px]">
-          {/* Text Content */}
-          <div className="max-w-[1149px] w-full text-center space-y-4 mb-5">
-            <h1 className="text-[24px] md:text-[38px] leading-[32px] md:leading-[48px] font-extrabold text-white">
-              Precifique, controle seus lucros e acompanhe a saúde do seu 
-              e-commerce com praticidade e precisão.
-            </h1>
-            <p className="text-white text-base leading-[24px] max-w-[836px] mx-auto">
-              Diga adeus às planilhas confusas, elimine erros manuais e centralize sua precificação e gestão em um só lugar.
-              <br />
-              De forma simples, automatizada e sem dor de cabeça.
-            </p>
-          </div>
+    <section id="teste-gratis" className="bg-white">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-14">
+        <div className="flex flex-col items-center pt-[90px] pb-[90px]">
+          {/* Content Wrapper */}
+          <div className="max-w-[1126px] w-full">
+            {/* Header Content */}
+            <div className="flex flex-col items-center text-center space-y-8 mb-12">
+              {/* Icon */}
+              <div className="w-[38px] h-[38px] flex items-center justify-center">
+                <img 
+                  src="/assets/icons/diamond.svg" 
+                  alt="Diamond icon" 
+                  className="w-[38px] h-[38px]"
+                />
+              </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-10">
-            <button 
-              className="w-[250px] h-11 rounded-2xl bg-white hover:bg-white/90 border border-[#288DF8]"
-            >
-              <a
-                href="#pricing"
-                className="w-full text-base text-primary font-bold"
-              >
-                Quero contratar agora
-              </a>
-            </button>
-            <button 
-              className="w-[250px] h-11 rounded-2xl bg-primary hover:bg-primary/90 border border-white"
-            >
-              <a
-                href="https://allpriceteam.com.br/cadastro"
-                className="w-full text-base text-white font-bold"
-              >
-                Quero testar 7 dias grátis
-              </a>
-            </button>
-          </div>
+              {/* Title and Description */}
+              <div className="max-w-[840px] space-y-6">
+                <h2 className="text-[32px] font-bold text-primary leading-[45px]">
+                  Agenda organizada, dia produtivo
+                </h2>
+                <p className="text-[#414651] text-lg leading-[29px]">
+                  Com a agenda do upOS, cada técnico visualiza suas ordens de serviço do dia em tempo real, com status, horários e prioridade. Mais agilidade na execução, menos retrabalho e zero confusão.
+                </p>
+              </div>
 
-          {/* Dashboard Preview */}
-          <div className="w-full">
-            <img
-              src={'https://i.imgur.com/6ltfd6z.png'} // https://i.imgur.com/IdvVbYk.png
-              alt="Dashboard Preview"
-              className="w-full h-auto object-contain"
-            />
+              {/* CTA Button */}
+              <button className="w-[250px] h-11 rounded-2xl bg-primary border border-[#3685fb] hover:bg-primary/90 transition-colors duration-300">
+                <span className="text-white font-bold text-base">
+                  Quero testar agora!
+                </span>
+              </button>
+            </div>
+
+            {/* Image Preview */}
+            <div className="w-full">
+              <img
+                src='https://i.ibb.co/hJbsHMsg/calendar.webp'
+                alt="Agenda do upOS"
+                className="w-full h-auto object-contain"
+              />
+            </div>
           </div>
         </div>
       </div>

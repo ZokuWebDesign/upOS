@@ -12,7 +12,7 @@ const FeatureImageOne = () => {
   ];
 
   return (
-    <section className="bg-[#f9fcff] px-4 lg:px-16 py-12 lg:py-28">
+    <section id='desafios' className="bg-[#f9fcff] px-4 lg:px-16 py-12 lg:py-28">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center justify-center">
           {/* Left side - Image */}

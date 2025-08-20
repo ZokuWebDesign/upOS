@@ -8,82 +8,91 @@ import {
 
 const faqs = [
   {
-    question: "1. Para quem, exatamente, é o All Price?",
-    answer: "Para todo mundo que vende on-line — do CPF que anuncia do sofá aos grandes lojistas com CNPJ parrudo. Serve para marketplaces, e-commerce próprio, MEIs, MEs… se você precisa precificar, controlar margens e parar de sofrer com planilhas, é aqui mesmo."
+    question: "1. Como funciona o teste gratuito do upOS?",
+    answer: "Você pode testar o sistema gratuitamente por 7 dias, com acesso completo a todas as funcionalidades do plano Profissional. Não precisa de cartão de crédito para começar."
   },
   {
-    question: "2. Preciso ter um ERP para usar?",
-    answer: "Não, você não precisa ter um ERP para usar o All Price. Nossa plataforma foi desenvolvida para funcionar de forma independente, permitindo que você gerencie seus preços e margens mesmo sem um sistema ERP."
+    question: "2. Preciso instalar algo para usar o sistema?",
+    answer: "Não! O upOS é 100% online e funciona direto no seu navegador. Você pode acessar de qualquer lugar, a qualquer hora, sem instalar nada."
   },
   {
-    question: "3. Quais marketplaces e ERPs o All Price integra?",
-    answer: "Integramos com os principais marketplaces do Brasil e diversos sistemas ERP. Entre os marketplaces, temos Mercado Livre, Amazon, Shopee, e outros. Para ERPs, oferecemos integração com sistemas populares do mercado."
+    question: "3. É fácil de usar mesmo? Minha equipe vai conseguir sem treinamento?",
+    answer: "Sim! O upOS foi desenvolvido para ser intuitivo. A interface é simples e organizada, permitindo que sua equipe comece a usar imediatamente. Oferecemos também materiais de apoio e suporte."
   },
   {
-    question: "4. Como o sistema calcula o preço de venda?",
-    answer: "O sistema utiliza algoritmos avançados que consideram diversos fatores como custos, margens, impostos e taxas dos marketplaces para calcular o preço ideal de venda, garantindo sua lucratividade."
+    question: "4. Posso personalizar os serviços e valores conforme minha loja?",
+    answer: "Claro! Você pode cadastrar todos os seus serviços, definir preços personalizados e criar regras de precificação que se adequem ao seu negócio e margem de lucro desejada."
   },
   {
-    question: "5. Dá pra atualizar centenas de anúncios de uma só vez?",
-    answer: "Sim! Com o All Price, você pode atualizar múltiplos anúncios simultaneamente, economizando tempo e garantindo consistência nos seus preços em todas as plataformas."
+    question: "5. Já vem com modelos de celulares e serviços cadastrados?",
+    answer: "Sim! O sistema já vem com um banco de dados completo dos principais modelos de smartphones e os serviços mais comuns. Você pode usar como está ou personalizar conforme sua necessidade."
   },
   {
-    question: "6. Recebo alertas de lucro ou prejuízo?",
-    answer: "Sim, nossa plataforma monitora constantemente suas margens e envia alertas em tempo real quando detecta situações de risco ou oportunidades de otimização."
+    question: "6. Como funciona o envio de orçamentos por WhatsApp?",
+    answer: "O sistema gera automaticamente um orçamento profissional em PDF e envia diretamente para o WhatsApp do cliente com apenas um clique. Isso agiliza o atendimento e melhora a conversão."
   },
   {
-    question: "7. Há limite de pedidos ou anúncios que posso importar?",
-    answer: "Não há limite técnico para importação. O número de pedidos e anúncios que você pode gerenciar depende do plano contratado."
+    question: "7. O sistema tem PDV integrado para vender produtos também?",
+    answer: "Sim! Além de gerenciar serviços, o upOS possui PDV completo para venda de produtos, controle de estoque, emissão de nota fiscal e relatórios de vendas integrados."
   },
   {
-    question: "8. E a parte de relatórios?",
-    answer: "Oferecemos relatórios detalhados e personalizáveis que mostram o desempenho das suas vendas, margens, produtos mais rentáveis e outras métricas importantes para seu negócio."
+    question: "8. Posso configurar regras de precificação com base no meu lucro desejado?",
+    answer: "Perfeitamente! Você define suas margens de lucro por tipo de serviço ou produto, e o sistema calcula automaticamente os preços ideais para garantir sua rentabilidade."
   },
   {
-    question: "9. Quanto custa?",
-    answer: "Temos diferentes planos para atender às necessidades de cada tipo de negócio. Entre em contato conosco para conhecer as opções e escolher a mais adequada para você."
+    question: "9. Dá pra acompanhar o desempenho da minha equipe e conversões?",
+    answer: "Sim! O sistema oferece relatórios completos de performance, conversão de orçamentos, produtividade da equipe e análises detalhadas para você tomar decisões estratégicas."
   },
   {
-    question: "10. Posso testar antes de pagar?",
-    answer: "Sim! Oferecemos um período de teste gratuito para você conhecer todas as funcionalidades da plataforma sem compromisso."
-  },
-  {
-    question: "11. Como funciona o suporte e onboarding?",
-    answer: "Fornecemos suporte completo durante todo o processo, desde o onboarding até o uso diário da plataforma. Nossa equipe está disponível para ajudar com qualquer dúvida ou necessidade."
-  },
-  {
-    question: "12. Meus dados ficam seguros?",
-    answer: "Sim, a segurança dos seus dados é nossa prioridade. Utilizamos as mais avançadas tecnologias de criptografia e seguimos rigorosos protocolos de segurança e LGPD."
+    question: "10. O que acontece após o fim do teste gratuito?",
+    answer: "Você pode escolher um dos nossos planos para continuar usando. Seus dados ficam salvos e você mantém acesso a tudo que configurou durante o teste. Sem pegadinhas!"
   }
 ];
 
 const FAQ = () => {
   return (
-    <section id="faq" className="bg-white px-4 sm:px-14 lg:px-[95px] pt-[70px] pb-[80px] sm:pb-[90px]">
-      <div className="max-w-[1090px] mx-auto">
-        <div className="max-w-3xl mx-auto text-center pb-12">
-          <h2 className="text-[32px] font-bold text-primary mb-4">
+    <section id="faq" className="bg-[#fffcf7] px-4 sm:px-8 lg:px-14 pt-[70px] pb-16 sm:pb-[90px]">
+      <div className="max-w-[1280px] mx-auto">
+        {/* Title centered at top */}
+        <div className="text-center pb-6">
+          <h2 className="text-[32px] font-bold text-primary">
             Dúvidas Frequentes
           </h2>
         </div>
 
-        <Accordion type="single" collapsible className="w-full space-y-4">
-          {faqs.map((faq, index) => (
-            <AccordionItem
-              key={index}
-              value={`item-${index}`}
-              className="rounded-xl px-6 py-0"
-            >
-              <AccordionTrigger className="py-5 text-[#545353] hover:no-underline">
-                <span className="text-left text-xl font-semibold">{faq.question}</span>
-              </AccordionTrigger>
-              <AccordionContent className="text-[#5B5B5B]">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
+        {/* Content with image on left and accordion on right */}
+        <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 items-start">
+          {/* Left side - Image (sticky) */}
+          <div className="w-full lg:w-[392px] flex-shrink-0">
+            <div className="lg:sticky lg:top-8">
+              <img
+                className="w-full h-auto rounded-lg"
+                src="https://i.ibb.co/3yJ50hGP/features.webp"
+                alt="FAQ Illustration"
+              />
+            </div>
+          </div>
 
+          {/* Right side - Accordion */}
+          <div className="flex-1 w-full lg:max-w-[752px]">
+            <Accordion type="single" collapsible className="w-full space-y-4">
+              {faqs.map((faq, index) => (
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="px-6 py-0"
+                >
+                  <AccordionTrigger className="py-5 text-[#545353] hover:no-underline">
+                    <span className="text-left text-xl font-semibold">{faq.question}</span>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-[#5B5B5B]">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -1,31 +1,41 @@
 "use client";
-import { useState, useEffect, useRef, MouseEvent } from "react";
+import { useState, useRef, MouseEvent } from "react";
 
 const testimonials = [
   {
-    quote: "Conectou muito fácil com meu Bling,\ne agora tenho todos os custos\nsincronizados com a precificação.\n\nConectou muito fácil com meu Bling,\ne agora tenho todos os custos\nsincronizados com a precificação.\nConectou muito fácil com meu Bling,\ne agora tenho todos os custos\nsincronizados com a precificação.",
-    name: "Marcos Laurentino",
-    usageTime: "Usando há 15 dias"
+    quote: "Em duas semanas usando o upOS, minha taxa de conversão de orçamentos subiu de 40% para 70%",
+    name: "Lucas V.",
+    role: "Dono de assistência técnica"
   },
   {
-    quote: "Conectou muito fácil com meu Bling,\ne agora tenho todos os custos\nsincronizados com a precificação.",
-    name: "Daniela Mosquera",
-    usageTime: "Usando há 63 dias"
+    quote: "Reduzi em 90% os erros de comunicação com a equipe técnica graças ao histórico nas OS",
+    name: "Mariana A.",
+    role: "Dona de assistência técnica"
   },
   {
-    quote: "Conectou muito fácil com meu Bling,\ne agora tenho todos os custos\nsincronizados com a precificação.\n\nConectou muito fácil com meu Bling,\ne agora tenho todos os custos\nsincronizados com a precificação.",
-    name: "Marcos Laurentino",
-    usageTime: "Usando há 15 dias"
+    quote: "Antes era um caos passar preços. Agora, o vendedor só insere o custo e o sistema calcula tudo sozinho.",
+    name: "Andre S.",
+    role: "Dono de assistência técnica"
   },
   {
-    quote: "Conectou muito fácil com meu Bling,\ne agora tenho todos os custos\nsincronizados com a precificação.",
-    name: "Daniela Mosquera",
-    usageTime: "Usando há 63 dias"
+    quote: "Antes do upOS, perdíamos prazos e esquecíamos pagamentos. Agora tudo está em um só lugar!",
+    name: "Lucas R.",
+    role: "Dono de assistência técnica"
   },
   {
-    quote: "Mesmo com 2500 SKUs ele cuida de me avisar e tem todos os custos visíveis e atualizados!",
-    name: "Marcos Laurentino",
-    usageTime: "Usando há 15 dias"
+    quote: "O painel é leve, rápido e super intuitivo. Consigo acompanhar minha equipe de qualquer lugar.",
+    name: "Patrícia M.",
+    role: "Gestora"
+  },
+  {
+    quote: "Economizo pelo menos 2 horas por dia só por ter tudo centralizado. O sistema é direto, sem enrolação.",
+    name: "Juliana M.",
+    role: "Técnica de informática"
+  },
+  {
+    quote: "O controle de contas a pagar e receber me salvou. Antes era tudo no caderno. Hoje recebo lembrete automático e não atraso mais nada.",
+    name: "Carlos V.",
+    role: "Micro empreendedor"
   }
 ];
 
@@ -70,11 +80,11 @@ const Testimonials = () => {
           }
         `}
       </style>
-      <section id="testimonials" className="w-full bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-14">
+      <section id="depoimentos" className="w-full bg-[#f8f7f6] py-[70px]">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-14">
           <div className="flex flex-col items-center gap-10">
             {/* Header */}
-            <div className="flex flex-col items-center gap-4 text-center max-w-3xl">
+            <div className="text-center">
               <h2 className="text-[32px] font-bold text-primary leading-10">
                 O que estão dizendo...
               </h2>
@@ -85,8 +95,8 @@ const Testimonials = () => {
               ref={containerRef}
               className="w-full overflow-x-auto pb-4 cursor-grab active:cursor-grabbing scrollbar-hide"
               style={{
-                scrollbarWidth: 'none',  /* Firefox */
-                msOverflowStyle: 'none',  /* IE and Edge */
+                scrollbarWidth: 'none',
+                msOverflowStyle: 'none',
                 WebkitOverflowScrolling: 'touch'
               }}
               onMouseDown={handleMouseDown}
@@ -94,25 +104,23 @@ const Testimonials = () => {
               onMouseLeave={handleMouseLeave}
               onMouseMove={handleMouseMove}
             >
-              <div className="flex gap-4 min-w-max">
+              <div className="flex gap-6 min-w-max px-4">
                 {testimonials.map((testimonial, index) => (
                   <div 
                     key={index}
-                    className="w-[305px] bg-[#f0f0f0] rounded-2xl overflow-hidden select-none"
+                    className="w-[305px] bg-white border border-[#e9eaeb] rounded-2xl p-4 select-none"
                   >
-                    <div className="p-2.5 flex flex-col gap-4">
-                      <div className="flex flex-col gap-2">
-                        <p className="text-[#393939] text-base tracking-[-0.8px] leading-[1.17] min-h-[212px] whitespace-pre-line">
-                          {testimonial.quote}
+                    <div className="flex flex-col justify-between h-[180px]">
+                      <p className="text-[#414651] text-base font-normal leading-[1.6] tracking-[-0.8px]">
+                        "{testimonial.quote}"
+                      </p>
+                      <div className="flex flex-col gap-1">
+                        <p className="text-[#414651] text-base font-semibold tracking-[-0.8px] leading-[1.17]">
+                          {testimonial.name}
                         </p>
-                        <div className="flex flex-col gap-1">
-                          <p className="font-semibold text-[#393939] text-base tracking-[-0.8px] leading-[1.17]">
-                            {testimonial.name}
-                          </p>
-                          <p className="text-[#39393980] text-xs tracking-[-0.6px]">
-                            {testimonial.usageTime}
-                          </p>
-                        </div>
+                        <p className="text-[#717680] text-xs font-semibold tracking-[-0.6px] leading-[1.17]">
+                          {testimonial.role}
+                        </p>
                       </div>
                     </div>
                   </div>

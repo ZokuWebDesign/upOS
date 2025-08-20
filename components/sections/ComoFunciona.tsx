@@ -59,7 +59,7 @@ const ComoFunciona = () => {
   }, []);
 
   return (
-    <section className="bg-[#fefefe] border border-[#3685fb]">
+    <section id="como-funciona" className="bg-[#fefefe] border border-[#3685fb]">
       <div className="max-w-7xl mx-auto py-16 lg:py-28 px-4 sm:px-6 lg:px-16">
         {/* Title Section */}
         <div className="text-center mb-12">
