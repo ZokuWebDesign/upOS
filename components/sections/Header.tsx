@@ -54,7 +54,7 @@ const Header = () => {
               <div className="flex items-center gap-4">
                 <Button variant="ghost" className="px-4 py-[10px]">
                   <a
-                    href="https://allpriceteam.com.br/login"
+                    href="https://all-price-copy.bubbleapps.io/login"
                     className="w-full text-base font-bold"
                   >
                     Preço
@@ -62,7 +62,7 @@ const Header = () => {
                 </Button>
                 <Button variant="primary" className="w-[153px] h-11">
                   <a
-                    href="https://allpriceteam.com.br/cadastro"
+                    href="https://all-price-copy.bubbleapps.io/cadastro"
                     className="w-full text-base font-bold"
                   >
                     Teste grátis
@@ -78,7 +78,7 @@ const Header = () => {
                   className="h-[34px] px-4 rounded-[12.4px] bg-primary hover:bg-primary/90 border border-[#288DF8]"
                 >
                   <a
-                    href="https://allpriceteam.com.br/cadastro"
+                    href="https://all-price-copy.bubbleapps.io/cadastro"
                     className="w-full text-sm text-white font-bold"
                   >
                     Testar grátis
@@ -131,7 +131,7 @@ const Header = () => {
               <div className="flex flex-col gap-2.5 mt-2 p-[19px] border-2 border-[#F7F7F7] rounded-[9px]">
                 <button className="w-full">
                   <a
-                    href="https://allpriceteam.com.br/login"
+                    href="https://all-price-copy.bubbleapps.io/login"
                     className="flex justify-between items-center w-full h-[53px] px-4 rounded-2xl bg-[#F7F7F7] text-primary font-semibold text-[18.4px]"
                   >
                     Minha conta
@@ -142,7 +142,7 @@ const Header = () => {
                 </button>
                 <button className="w-full">
                   <a
-                    href="https://allpriceteam.com.br/cadastro"
+                    href="https://all-price-copy.bubbleapps.io/cadastro"
                     className="flex justify-between items-center w-full h-[53px] px-4 rounded-2xl bg-[#F7F7F7] text-primary font-semibold text-[18.4px]"
                   >
                     Cadastrar
