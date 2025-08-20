@@ -5,7 +5,9 @@ const nextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true
-  }
+  },
+  // This ensures that 404.html is generated for static hosting
+  generateBuildId: () => 'build',
 };
 
 module.exports = nextConfig;

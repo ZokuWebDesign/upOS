@@ -46,20 +46,20 @@ RewriteBase /
 # Root -> index.html
 RewriteRule ^$ index.html [L]
 
-# Let existing files/dirs pass
+# Let existing files/dirs pass through (including Next.js generated files)
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
-# Pretty URLs: if "path.html" exists, serve it
+# Handle Next.js static routes with .html extension
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.+?)/?$ $1.html [L]
 
-# Everything else: real 404 (URL doesn't change)
-RewriteRule ^ - [R=404,L]
-
-# Custom 404 page (rendered for the 404 above)
-ErrorDocument 404 /nao-encontrada.html
+# For any other requests that don't match a file, redirect to the custom 404 page
+# This will redirect to the nao-encontrada page
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ /nao-encontrada/ [L]
 
 # CORS (optional)
 <IfModule mod_headers.c>
