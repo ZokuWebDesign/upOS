@@ -3,6 +3,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { useScrollDirection } from "@/hooks/useScrollDirection";
+import { AUTH_LINKS, WHATSAPP_LINKS } from "@/constants/links";
 
 const Header = () => {
   const isMobile = useIsMobile();
@@ -54,7 +55,7 @@ const Header = () => {
               <div className="flex items-center gap-4">
                 <Button variant="ghost" className="px-4 py-[10px]">
                   <a
-                    href="https://all-price-copy.bubbleapps.io/login"
+                    href={AUTH_LINKS.LOGIN}
                     className="w-full text-base font-bold"
                   >
                     Preço
@@ -62,7 +63,7 @@ const Header = () => {
                 </Button>
                 <Button variant="primary" className="w-[153px] h-11">
                   <a
-                    href="https://all-price-copy.bubbleapps.io/cadastro"
+                    href={AUTH_LINKS.SIGNUP}
                     className="w-full text-base font-bold"
                   >
                     Teste grátis
@@ -78,7 +79,7 @@ const Header = () => {
                   className="h-[34px] px-4 rounded-[12.4px] bg-primary hover:bg-primary/90 border border-[#288DF8]"
                 >
                   <a
-                    href="https://all-price-copy.bubbleapps.io/cadastro"
+                    href={AUTH_LINKS.SIGNUP}
                     className="w-full text-sm text-white font-bold"
                   >
                     Testar grátis
@@ -131,7 +132,7 @@ const Header = () => {
               <div className="flex flex-col gap-2.5 mt-2 p-[19px] border-2 border-[#F7F7F7] rounded-[9px]">
                 <button className="w-full">
                   <a
-                    href="https://all-price-copy.bubbleapps.io/login"
+                    href={AUTH_LINKS.LOGIN}
                     className="flex justify-between items-center w-full h-[53px] px-4 rounded-2xl bg-[#F7F7F7] text-primary font-semibold text-[18.4px]"
                   >
                     Minha conta
@@ -142,7 +143,7 @@ const Header = () => {
                 </button>
                 <button className="w-full">
                   <a
-                    href="https://all-price-copy.bubbleapps.io/cadastro"
+                    href={AUTH_LINKS.SIGNUP}
                     className="flex justify-between items-center w-full h-[53px] px-4 rounded-2xl bg-[#F7F7F7] text-primary font-semibold text-[18.4px]"
                   >
                     Cadastrar
@@ -152,8 +153,8 @@ const Header = () => {
                   </a>
                 </button>
                 <button className="w-full">
-                  <a 
-                    href="https://api.whatsapp.com/send/?phone=5511989705048&text=Ol%C3%A1!%20Preciso%20de%20ajuda%20com%20o%20AllPrice.%20Por%20favor%2C%20podem%20me%20auxiliar%3F&type=phone_number&app_absent=0"
+                  <a
+                    href={WHATSAPP_LINKS.SUPPORT}
                     className="flex justify-between items-center w-full h-[53px] px-4 rounded-2xl bg-[#F7F7F7] text-primary font-semibold text-[18.4px]"
                   >
                     Falar com suporte

@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
+import { WHATSAPP_LINKS } from "@/constants/links";
 
 const NotFound = () => {
   const pathName = usePathname();
@@ -55,7 +56,7 @@ const NotFound = () => {
             <p className="text-sm text-[#414651] mb-4">Precisa de ajuda?</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://api.whatsapp.com/send/?phone=5511989705048&text=Ol%C3%A1!%20Preciso%20de%20ajuda%20com%20o%20upOS.%20Por%20favor%2C%20podem%20me%20auxiliar%3F&type=phone_number&app_absent=0"
+                href={WHATSAPP_LINKS.SUPPORT}
                 className="text-primary hover:text-primary/80 text-sm font-semibold transition-colors"
               >
                 Falar com suporte

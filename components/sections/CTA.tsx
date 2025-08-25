@@ -1,5 +1,6 @@
 "use client";
 import { Rocket } from "lucide-react";
+import { AUTH_LINKS } from "@/constants/links";
 
 const CTA = () => {
   return (
@@ -27,9 +28,14 @@ const CTA = () => {
 
               {/* CTA Button */}
               <button className="w-[332px] h-11 rounded-2xl bg-transparent border border-white hover:bg-white hover:text-[#0067d1] transition-colors duration-300">
-                <span className="text-white hover:text-[#0067d1] font-bold text-base">
-                  Quero testar o upOS gratuitamente
-                </span>
+                <a
+                  href={AUTH_LINKS.SIGNUP}
+                  className="w-full h-full flex items-center justify-center"
+                >
+                  <span className="text-white hover:text-[#0067d1] font-bold text-base">
+                    Quero testar o upOS gratuitamente
+                  </span>
+                </a>
               </button>
             </div>
 

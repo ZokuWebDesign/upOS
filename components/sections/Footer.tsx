@@ -1,4 +1,5 @@
 "use client";
+import { SOCIAL_LINKS, WHATSAPP_LINKS } from "@/constants/links";
 
 const Footer = () => {
   return (
@@ -29,7 +30,7 @@ const Footer = () => {
                 </div>
                 <button className="w-[250px] h-11 bg-white rounded-2xl">
                   <a
-                    href="https://api.whatsapp.com/send/?phone=5511989705048&text=Ol%C3%A1!%20Preciso%20de%20ajuda%20com%20o%20upOS.%20Por%20favor%2C%20podem%20me%20auxiliar%3F&type=phone_number&app_absent=0"
+                    href={WHATSAPP_LINKS.SUPPORT}
                     className="w-full px-4 py-2.5 text-base font-bold text-[#3685fb]"
                   >
                     Falar com o suporte
@@ -58,11 +59,11 @@ const Footer = () => {
               <div className="flex flex-col gap-4">
                 <h3 className="text-white text-[14px] leading-[20px]">Social</h3>
                 <div className="flex flex-col gap-3 text-white text-[14px] leading-[24px] font-semibold">
-                  <a href="#">Instagram</a>
-                  <a href="#">Facebook</a>
-                  <a href="#">Whatsapp</a>
-                  <a href="#">Youtube</a>
-                  <a href="#">Linkedin</a>
+                  <a href={SOCIAL_LINKS.INSTAGRAM}>Instagram</a>
+                  <a href={SOCIAL_LINKS.FACEBOOK}>Facebook</a>
+                  <a href={SOCIAL_LINKS.WHATSAPP}>Whatsapp</a>
+                  <a href={SOCIAL_LINKS.YOUTUBE}>Youtube</a>
+                  <a href={SOCIAL_LINKS.LINKEDIN}>Linkedin</a>
                 </div>
               </div>
 
@@ -79,9 +80,9 @@ const Footer = () => {
               <div className="flex flex-col gap-4">
                 <h3 className="text-white text-[14px] leading-[20px]">Atendimento</h3>
                 <div className="flex flex-col gap-3 text-white text-[14px] leading-[24px] font-semibold">
-                  <a href="tel:08000029210">0800 002 9210</a>
-                  <a href="mailto:suporte@upos.com">suporte@upos.com</a>
-                  <a href="https://api.whatsapp.com/send/?phone=5511989705048&text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20conhecer%20as%20oportunidades%20de%20trabalho%20na%20upOS.%20Podem%20me%20ajudar%3F&type=phone_number&app_absent=0">Trabalhe conosco</a>
+                  <a href="tel:5564993016145">+55 (64) 99301-6145</a>
+                  <a href="mailto:suporte@upos.com.br">suporte@upos.com.br</a>
+                  <a href={WHATSAPP_LINKS.WORK}>Trabalhe conosco</a>
                 </div>
               </div>
             </div>
@@ -96,16 +97,18 @@ const Footer = () => {
             ® 2025 | upOS | CNPJ: 25.222.000/0001-01 | Todos os direitos reservados.
           </p>
           <div className="flex gap-3">
-            <a href="#" className="hover:opacity-80">
+            <a href={SOCIAL_LINKS.INSTAGRAM} className="hover:opacity-80">
               <img src="/assets/icons/instagram.svg" alt="Instagram" className="w-6 h-6" />
             </a>
-            <a href="#" className="hover:opacity-80">
+            <a href={SOCIAL_LINKS.YOUTUBE} className="hover:opacity-80">
               <img src="/assets/icons/youtube.svg" alt="YouTube" className="w-6 h-6" />
             </a>
-            <a href="#" className="hover:opacity-80">
+            {/*
+            <a href={SOCIAL_LINKS.LINKEDIN} className="hover:opacity-80">
               <img src="/assets/icons/linkedin.svg" alt="LinkedIn" className="w-6 h-6" />
             </a>
-            <a href="#" className="hover:opacity-80">
+            */}
+            <a href={SOCIAL_LINKS.FACEBOOK} className="hover:opacity-80">
               <img src="/assets/icons/facebook.svg" alt="Facebook" className="w-6 h-6" />
             </a>
           </div>

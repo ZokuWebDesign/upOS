@@ -1,5 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
+import { AUTH_LINKS } from "@/constants/links";
 
 const Hero = () => {
   return (
@@ -26,7 +27,7 @@ const Hero = () => {
               className="w-auto h-11 rounded-2xl bg-white hover:bg-white/90 border border-[#288DF8]"
             >
               <a
-                href="#pricing"
+                href={AUTH_LINKS.SIGNUP}
                 className="w-full text-base text-primary font-bold"
               >
                 Testar o upOS grátis por 7 dias

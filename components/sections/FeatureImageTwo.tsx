@@ -1,4 +1,5 @@
 "use client";
+import { AUTH_LINKS } from "@/constants/links";
 
 const FeatureImageTwo = () => {
   return (
@@ -30,9 +31,14 @@ const FeatureImageTwo = () => {
 
               {/* CTA Button */}
               <button className="w-[250px] h-11 rounded-2xl bg-primary border border-[#3685fb] hover:bg-primary/90 transition-colors duration-300">
-                <span className="text-white font-bold text-base">
-                  Quero testar agora!
-                </span>
+                <a
+                  href={AUTH_LINKS.SIGNUP}
+                  className="w-full h-full flex items-center justify-center"
+                >
+                  <span className="text-white font-bold text-base">
+                    Quero testar agora!
+                  </span>
+                </a>
               </button>
             </div>
 

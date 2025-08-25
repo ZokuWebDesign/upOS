@@ -189,7 +189,7 @@ const TermsOfUse = () => {
           <section>
             <h2 className="text-2xl font-semibold mb-4 text-primary">6. CONTATO E SUPORTE</h2>
             <ul className="list-disc list-inside space-y-2 text-[#414651] ml-4">
-              <li>E-mail: <a href={SOCIAL_LINKS.MAIL} className="font-semibold text-primary hover:underline">contato@upos.com.br</a></li>
+              <li>E-mail: <a href={SOCIAL_LINKS.MAIL} className="font-semibold text-primary hover:underline">suporte@upos.com.br</a></li>
               <li>Suporte técnico disponível 24/7 na plataforma</li>
               <li>Central de ajuda com documentação completa</li>
             </ul>

@@ -130,8 +130,8 @@ const PrivacyPolicy = () => {
               Se você tiver dúvidas sobre esta política de privacidade ou quiser exercer seus direitos, entre em contato conosco:
             </p>
             <ul className="list-none space-y-2 text-[#414651]">
-              <li>Email: <a href={SOCIAL_LINKS.MAIL} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">contato@upos.com.br</a></li>
-              <li>Telefone: <a href={SOCIAL_LINKS.NUMBER} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">+55 (11) 9999-9999</a></li>
+              <li>Email: <a href={SOCIAL_LINKS.MAIL} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">suporte@upos.com.br</a></li>
+              <li>Telefone: <a href={SOCIAL_LINKS.NUMBER} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">+55 (64) 99301-6145</a></li>
               <li>Endereço: São Paulo, SP - Brasil</li>
             </ul>
           </section>

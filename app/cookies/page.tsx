@@ -91,7 +91,7 @@ const CookiesPage = () => {
           <section>
             <h2 className="text-2xl font-semibold mb-4 text-primary">Contato</h2>
             <p className="text-[#414651] mb-4">
-              Se você tiver alguma dúvida sobre nossa política de cookies, entre em contato conosco através do email: <a href={SOCIAL_LINKS.MAIL} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">contato@upos.com.br</a>
+              Se você tiver alguma dúvida sobre nossa política de cookies, entre em contato conosco através do email: <a href={SOCIAL_LINKS.MAIL} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">suporte@upos.com.br</a>
             </p>
           </section>
         </div>
