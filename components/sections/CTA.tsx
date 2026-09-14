@@ -43,7 +43,7 @@ const CTA = () => {
             <div className="flex justify-center">
               <div className="w-[430px] max-w-full">
                 <img
-                  src='https://i.ibb.co/6RT5jyn7/cta.webp'
+                  src='https://cdn.sydapp.com.br/upos.com.br/cta.webp'
                   alt="Dashboard Preview"
                   className="w-full h-auto object-contain"
                 />

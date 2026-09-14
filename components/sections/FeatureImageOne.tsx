@@ -18,7 +18,7 @@ const FeatureImageOne = () => {
           {/* Left side - Image */}
           <div className="flex-1 max-w-[469px]">
             <img
-              src={'https://i.ibb.co/wFWsX3Xk/imageone.webp'}
+              src={'https://cdn.sydapp.com.br/upos.com.br/imageone.webp'}
               alt="Funcionários confusos"
               className="w-full h-auto rounded-lg"
             />

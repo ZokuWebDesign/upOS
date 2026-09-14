@@ -61,7 +61,7 @@ const FeaturesWithImage = () => {
           <div className="w-full flex justify-center">
             <div className="w-full">
               <img
-                src="https://i.ibb.co/3yJ50hGP/features.webp"
+                src="https://cdn.sydapp.com.br/upos.com.br/features.webp"
                 alt="Sistema upOS"
                 className="w-full h-auto object-cover rounded-lg"
               />

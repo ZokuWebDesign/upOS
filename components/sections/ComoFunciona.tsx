@@ -76,7 +76,7 @@ const ComoFunciona = () => {
           <div className="w-full flex justify-center">
             <div className="w-full">
               <img
-                src="https://i.ibb.co/kLvr5mv/imagetwo.webp"
+                src="https://cdn.sydapp.com.br/upos.com.br/imagetwo.webp"
                 alt="Como funciona o sistema upOS"
                 className="w-full h-auto object-cover rounded-lg"
               />

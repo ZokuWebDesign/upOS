@@ -45,7 +45,7 @@ const FeatureImageTwo = () => {
             {/* Image Preview */}
             <div className="w-full">
               <img
-                src='https://i.ibb.co/hJbsHMsg/calendar.webp'
+                src='https://cdn.sydapp.com.br/upos.com.br/calendar.webp'
                 alt="Agenda do upOS"
                 className="w-full h-auto object-contain"
               />

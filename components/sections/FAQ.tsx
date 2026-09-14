@@ -67,7 +67,7 @@ const FAQ = () => {
             <div className="lg:sticky lg:top-8">
               <img
                 className="w-full h-auto rounded-lg"
-                src="https://i.ibb.co/3yJ50hGP/features.webp"
+                src="https://cdn.sydapp.com.br/upos.com.br/features.webp"
                 alt="FAQ Illustration"
               />
             </div>

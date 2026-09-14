@@ -38,7 +38,7 @@ const Hero = () => {
           {/* Dashboard Preview */}
           <div className="w-full">
             <img
-              src={'https://i.ibb.co/KxnYPRx4/hero.webp'}
+              src={'https://cdn.sydapp.com.br/upos.com.br/hero.webp'}
               alt="Dashboard Preview"
               className="w-full h-auto object-contain"
             />

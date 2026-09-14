@@ -4,7 +4,7 @@ Welcome to **upOS – The Operating System for Repair Shops**, a smart and intui
 
 You can access the [project's live website here](https://upos.com.br/).
 
-![Project's Cover](https://i.imgur.com/6b48m7I.png)
+![Project's Cover](https://cdn.sydapp.com.br/upos.com.br/6b48m7I.webp)
 
 > upOS empowers small businesses to manage service orders, pricing, scheduling, stock, and sales with zero friction and full visibility.
 
